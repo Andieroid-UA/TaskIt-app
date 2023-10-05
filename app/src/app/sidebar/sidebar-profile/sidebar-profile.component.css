@@ -1,0 +1,9 @@
+/* Style the user image and info */
+.user-info {
+  margin-left: -10px;
+  margin-top: 20px
+}
+
+.user-image {
+  margin-right: 30px
+}

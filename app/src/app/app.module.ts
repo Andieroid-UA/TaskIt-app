@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarNavComponent } from './sidebar/sidebar-nav/sidebar-nav.component';
 import { SidebarProfileComponent } from './sidebar/sidebar-profile/sidebar-profile.component';
+import { TaskListComponent } from './task-list/task-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     SidebarNavComponent,
-    SidebarProfileComponent
+    SidebarProfileComponent,
+    TaskListComponent
   ],
   imports: [
     BrowserModule

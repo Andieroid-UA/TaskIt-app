@@ -1,0 +1,14 @@
+ul.dt-button-collection{
+	background-color: #e5e5e5;
+	border: 1px solid #c0c0c0;
+}
+.dataTables_info {
+	font-size: 0.8em;
+	margin-top: -12px;
+	text-align: right;
+}
+.task-list {
+  margin-top: 20px;
+  word-wrap: break-word;
+  margin-left: auto;
+}

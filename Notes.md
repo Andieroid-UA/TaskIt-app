@@ -39,3 +39,6 @@ bg- <-- background colors
 
 <https://getbootstrap.com/docs/4.0/utilities/colors/>
 
+I found a table reference!
+
+<https://codepen.io/RedJokingInn/pen/RpddaE>
