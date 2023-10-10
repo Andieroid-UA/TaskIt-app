@@ -42,3 +42,8 @@ bg- <-- background colors
 I found a table reference!
 
 <https://codepen.io/RedJokingInn/pen/RpddaE>
+
+### 10/9/23
+
+Found instructions on how to round corners
+<https://unused-css.com/blog/css-rounded-table-corners/>
