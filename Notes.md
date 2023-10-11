@@ -47,3 +47,16 @@ I found a table reference!
 
 Found instructions on how to round corners
 <https://unused-css.com/blog/css-rounded-table-corners/>
+
+
+### 10/10/23
+
+Found a link to a Kanban template
+<https://codepen.io/Aniboaz/pen/vKOXPa>
+
+
+Sign in/create an account page
+<https://codepen.io/bowie/pen/njjaZo>
+
+Transparent Window
+<https://codepen.io/jaeming/pen/XWyaMe>
