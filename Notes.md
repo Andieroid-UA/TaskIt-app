@@ -60,3 +60,12 @@ Sign in/create an account page
 
 Transparent Window
 <https://codepen.io/jaeming/pen/XWyaMe>
+
+### 10/11/23
+
+Dropdown buttons
+<https://getbootstrap.com/docs/4.0/components/dropdowns/>
+
+
+*I'm pretty sure I can put the task lines, like we've been doing, as a template. Then I don't need to go row per row to automate them in the HTML*
+
