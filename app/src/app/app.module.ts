@@ -5,7 +5,8 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { SidebarNavComponent } from './sidebar/sidebar-nav/sidebar-nav.component';
 import { SidebarProfileComponent } from './sidebar/sidebar-profile/sidebar-profile.component';
-import { TaskListComponent } from './task-list/task-list.component';
+import { TaskListComponent } from './main-page/task-list/task-list.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { TaskListComponent } from './task-list/task-list.component';
     SidebarComponent,
     SidebarNavComponent,
     SidebarProfileComponent,
-    TaskListComponent
+    TaskListComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule
