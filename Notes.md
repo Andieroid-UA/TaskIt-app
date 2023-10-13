@@ -69,3 +69,14 @@ Dropdown buttons
 
 *I'm pretty sure I can put the task lines, like we've been doing, as a template. Then I don't need to go row per row to automate them in the HTML*
 
+### 10/12/23
+
+<https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_login_form_modal>
+
+I like this page better! It has the capability to do things I want...
+
+
+**JUST LEARNED THIS VERY IMPORTANT THING**
+
+![Hotlinking](image-1.png)
+
