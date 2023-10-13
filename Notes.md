@@ -80,3 +80,13 @@ I like this page better! It has the capability to do things I want...
 
 ![Hotlinking](image-1.png)
 
+### 10/13/23
+
+Found a page that might be helpful in designing the UI interface
+
+<https://codepen.io/aybukeceylan/pen/OJRNbZp>
+
+
+*UPDATE. There is a LITERAL Assets folder. Use this for embedded images*
+
+![Hotlinking](image-2.png)
