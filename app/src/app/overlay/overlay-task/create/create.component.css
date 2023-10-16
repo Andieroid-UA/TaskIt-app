@@ -1,5 +1,7 @@
 body {
   background-color: #FCFCFC;
+  margin: 0;
+  padding: 0;
 }
 
 .row {
@@ -7,23 +9,58 @@ body {
   flex-direction: row;
 }
 
-.btn-together {
+.pop-up {
+  position: fixed;
+  margin: 5% auto;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.box {
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  -webkit-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1);
+  width: 60%;
+}
+
+.close-button {
+  transition: all 0.5s ease;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border: transparent;
+  background-color: transparent;
+}
+
+.child-container {
   display: flex;
-  justify-content: right;
-  right: 200px;
 }
 
 .child1 {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 10px;
   color: rgb(0, 0, 0);
+  width: 70%;
+  padding: 25px;
+}
+
+.child1 input[placeholder="Description"] {
+  width: 100%; /* Make the input box wider */
+  height: 100px;
+  text-align: ;
 }
 
 .child2 {
-  width: 50%;
   color: green;
   text-align: right;
-  right: 10px;
+  width: 30%;
+  padding: 20px;
+  padding-left: 10px;
 }
 
 .cover {
@@ -40,191 +77,13 @@ body {
   animation: blur 2s forwards;
 }
 
-.blur-out {
-  -webkit-animation: blur-out 2s forwards;
-  -moz-animation: blur-out 2s forwards;
-  -o-animation: blur-out 2s forwards;
-  animation: blur-out 2s forwards;
-}
-
-@-webkit-keyframes blur {
-  0% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-
-  100% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-}
-
-@-moz-keyframes blur {
-  0% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-
-  100% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-}
-
-@-o-keyframes blur {
-  0% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-
-  100% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-}
-
 @keyframes blur {
   0% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
+    backdrop-filter: blur(0px);
+    filter: blur(0px);
   }
-
   100% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
+    backdrop-filter: blur(4px);
+    filter: blur(4px);
   }
-}
-
-@-webkit-keyframes blur-out {
-  0% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-
-  100% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-}
-
-@-moz-keyframes blur-out {
-  0% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-
-  100% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-}
-
-@-o-keyframes blur-out {
-  0% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-
-  100% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-}
-
-@keyframes blur-out {
-  0% {
-      -webkit-filter: blur(4px);
-      -moz-filter: blur(4px);
-      -o-filter: blur(4px);
-      -ms-filter: blur(4px);
-      filter: blur(4px);
-  }
-
-  100% {
-      -webkit-filter: blur(0px);
-      -moz-filter: blur(0px);
-      -o-filter: blur(0px);
-      -ms-filter: blur(0px);
-      filter: blur(0px);
-  }
-}
-
-.content {
-  width: 650px;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-
-span {
-  color: dimgray;
-}
-
-.pop-up {
-  position: fixed;
-  margin: 5% auto;
-  left: 0;
-  right: 0;
-  z-index: 2;
-}
-
-.box {
-  background-color: whitesmoke;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10%;
-  -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
-  width: 60%;
-}
-
-.close-button {
-  transition: all 0.5s ease;
-  position: absolute;
-  right: 200px;
-  margin-top: -10px;
-  border: transparent;
-  background-color: transparent;
 }

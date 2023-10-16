@@ -1,239 +1,60 @@
-body {
-  font-size: 14px;
-  width: 100%;
-  background-color: #E0E0E0;
-}
-
 h1 {
-  position: absolute;
-  left: 16px;
-  top: 16px;
+  margin-top: .5em;
 }
 
-menu {
-  position: absolute;
-  right: 20px;
-  top: 20x;
-}
-
-menu.kanban .viewlist, menu.list .viewkanban {
-  display: inline;
-}
-
-menu.kanban .viewkanban, menu.list .viewlist {
-  display: none;
-}
-
-.dd {
-  max-width: 100%;
-  top: 88px;
-  margin: 0 auto;
-  display: block;
-}
-
-ol {
-  transition: border-color 2s ease, all 0.1s ease;
-}
-
-ol.list {
-  padding-top: 2em;
-  padding-left: 15px;
-  max-width: 650px;
-  margin: 0 auto;
-}
-
-ol.list .text {
-  float: right;
-  width: 60%;
-}
-
-ol.list h3, ol.list .actions, ol.list label {
-  float: left;
-  width: 30%;
-}
-
-ol.list > li, ol.list > h3 {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-ol.list > h2 {
-  padding-bottom: 6px;
-}
-
-ol.list.To-do {
-  border-left: 2px solid #FFB300;
-}
-
-ol.list.progress {
-  border-left: 2px solid #29B6F6;
-}
-
-ol.list.Done {
-  border-left: 2px solid #8BC34A;
-}
-
-h2 {
-  color: #607D8B;
-}
-
-ol.kanban.To-do {
-  border-top: 5px solid #FFB300;
-}
-
-ol.kanban.progress {
-  border-top: 5px solid #29B6F6;
-}
-
-ol.kanban.Done {
-  border-top: 5px solid #8BC34A;
-}
-
-ol.kanban {
-  border-top: 5px solid #78909C;
-  width: 50%;
-  height: auto;
-  margin: 1%;
-  max-width: 200px;
-  min-width: 120px;
-  display: inline-block;
-  vertical-align: top;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-  flex-direction: column;
-  min-height: 200px;
-  z-index: 1;
-  position: relative;
-  background: #fff;
-  padding: 1em;
-  border-radius: 2px;
-}
-
-.dd-item {
-  display: block;
-  position: relative;
-  list-style: none;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  min-height: 48px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+.kanban-container {
   display: flex;
-  font-size: 16px;
-  min-height: 120px;
-  overflow: hidden;
-  z-index: 1;
-  position: relative;
-  background: #fff;
-  border-radius: 2px;
-  box-sizing: border-box;
+  justify-content: space-between;
+  background-color: rgb(197, 197, 197);
+  margin-top: 1em;
 }
 
-.title {
-  align-self: flex-end;
-  color: inherit;
+.kanban-list {
+  flex: 1;
+  max-width: calc(33.33% - 10px); /* Divide the space into thirds with some spacing */
+  min-height: 150px; /* Minimum height to ensure visibility */
+  border: 1px solid #ccc; /* Border to separate categories */
+  border-radius: 4px;
+}
+
+.example-list {
+  min-height: 60px; /* Minimum height for items */
+  padding: 10px;
+  overflow: hidden;
   display: block;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+}
+
+.example-box {
+  padding: 20px 10px;
+  border-bottom: solid 1px #ccc;
+  color: rgba(0, 0, 0, 0.87);
   display: flex;
-  font-size: 22px;
-  line-height: normal;
-  overflow: hidden;
-  -webkit-transform-origin: 149px 48px;
-  transform-origin: 149px 48px;
-  margin: 0;
-}
-
-.text {
-  color: rgb(239, 0, 0);
-  border-top: 1px solid;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 18px;
-  overflow: hidden;
-  padding: 16px;
-  width: 90%;
-}
-
-.actions {
-  border-top: 1px solid rgba(0, 0, 0, .1);
-  font-size: 8px;
-  line-height: normal;
-  width: 100%;
-  color: #B0BEC5;
-  padding: 8px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   box-sizing: border-box;
-}
-
-/* Nestable */
-.dd {
-  position: relative;
-  display: block;
-  list-style: none;
-}
-
-.dd-list {
-  display: block;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.dd-list .dd-list {
-  padding-left: 30px;
-}
-
-.dd-collapsed .dd-list {
-  display: none;
-}
-
-.dd-item {
-  display: block;
-  margin: 5px 0;
-  padding: 5px 10px;
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  background: #fafafa;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-.dd-item:hover {
-  background: #e0ffb2;
-}
-
-.dd-placeholder,
-.dd-empty {
-  margin: 5px 0;
-  padding: 0;
-  min-height: 30px;
-  background: #E0E0E0;
-  border: 1px dashed #b6bcbf;
-  box-sizing: border-box;
-}
-
-.dd-empty {
-  border: 1px dashed #bbb;
-  min-height: 100px;
-  background-color: #E0E0E0;
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
-}
-
-.dd-dragel {
-  position: absolute;
-  pointer-events: none;
-  z-index: 9999;
-}
-
-.dd-dragel > .dd-item .dd-handle {
-  margin-top: 0;
   cursor: move;
+  background: white;
+  font-size: 14px;
+  border-radius: 8px; /* Add rounded corners */
 }
 
-.dd-dragel .dd-item {
-  -webkit-box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .5);
-  box-shadow: 2px 4px 6px 0 rgba(0, 0, 0, .5);
-  cursor: move;
+.cdk-drag-preview {
+  box-sizing: border-box;
+  border-radius: 8px; /* Rounded corners for the preview */
+  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+              0 8px 10px 1px rgba(0, 0, 0, 0.14),
+              0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+  opacity: 0;
+}
+
+.cdk-drag-animating {
+  transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+  border: none;
 }

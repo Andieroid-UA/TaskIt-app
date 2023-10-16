@@ -98,3 +98,10 @@ Getting closer to partial functionality! That Recipe app demo has everything I n
 <https://www.youtube.com/watch?v=YGCDAXFWAZo>
 
 Found another Kanban tutorial. Try this to move panels...
+
+### 10/16/23
+
+Just going to stick to pure documentation... frankenstiening is becoming too much of a hassle.
+
+<https://material.angular.io/cdk/drag-drop/api>
+

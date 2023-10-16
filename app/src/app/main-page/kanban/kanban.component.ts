@@ -1,53 +1,31 @@
-import { Component, OnInit, AfterViewInit, ElementRef } from '@angular/core';
-
-declare var $: any; // Include jQuery, Zepto, or other libraries as needed
+import { Component } from '@angular/core';
+import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-kanban',
   templateUrl: './kanban.component.html',
-  styleUrls: ['./kanban.component.css']
+  styleUrls: ['./kanban.component.css'],
 })
-export class KanbanComponent implements OnInit, AfterViewInit {
 
-  constructor(private elementRef: ElementRef) { }
+export class KanbanComponent {
 
-  ngOnInit() {
-    // You can add your initialization logic here
-  }
+  todo = ['Get to work', 'Pick up groceries', 'Go home', 'Fall asleep'];
+  inProgress = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk the dog'];
+  done = ['Get up', 'Brush teeth', 'Take a shower', 'Check e-mail', 'Walk the dog'];
 
-  ngAfterViewInit() {
-    // Your jQuery code goes here
-    const nestableElement = $(this.elementRef.nativeElement).find('.dd');
-
-    nestableElement.nestable({
-      // your nestable options go here
-    });
-
-    // Handle viewlist and viewkanban click events
-    nestableElement.on('click', '.viewlist', () => {
-      nestableElement.find('ol.kanban').addClass('list');
-      nestableElement.find('ol.list').removeClass('kanban');
-      nestableElement.find('menu').addClass('list');
-      nestableElement.find('menu').removeClass('kanban');
-    });
-
-    nestableElement.on('click', '.viewkanban', () => {
-      nestableElement.find('ol.list').addClass('kanban');
-      nestableElement.find('ol.kanban').removeClass('list');
-      nestableElement.find('menu').addClass('kanban');
-      nestableElement.find('menu').removeClass('list');
-    });
-
-    // Handle color selection using Spectrum
-    const colorPicker = nestableElement.find('#color');
-    const labelElement = nestableElement.find('#label');
-
-    colorPicker.spectrum({
-      color: "red",
-      change: function (color) {
-        labelElement.text("change called: " + color.toHexString());
-      }
-    });
+  drop(event: CdkDragDrop<string[]>) {
+    if (event.previousContainer === event.container) {
+      // Moving an item within the same list
+      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+    } else {
+      // Transferring an item to a different list
+      transferArrayItem(
+        event.previousContainer.data,
+        event.container.data,
+        event.previousIndex,
+        event.currentIndex
+      );
+    }
   }
 
 }
