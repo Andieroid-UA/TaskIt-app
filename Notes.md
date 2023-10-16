@@ -90,3 +90,11 @@ Found a page that might be helpful in designing the UI interface
 *UPDATE. There is a LITERAL Assets folder. Use this for embedded images*
 
 ![Hotlinking](image-2.png)
+
+### 10/15/23
+
+Getting closer to partial functionality! That Recipe app demo has everything I need to link these together...
+
+<https://www.youtube.com/watch?v=YGCDAXFWAZo>
+
+Found another Kanban tutorial. Try this to move panels...
