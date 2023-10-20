@@ -11,7 +11,7 @@
     <button class="btn btn-secondary dropdown-toggle">
     Priority
     </button>
-    <button>
+    <button class="btn-primary" (click)="addItem(newItem.value)">
     Add New Task
     </button>
   </tr>
@@ -34,6 +34,18 @@
         <td> due-date </td>
         <td> status </td>
         <td> actions </td>
+
+        <div class="line-1">
+          <button class="btn"><i class="bi bi-eye" style="font-size: 25px;"></i></button>
+          <button class="btn"><i class="bi bi-pencil-square" style="font-size: 25px;"></i></button>
+          <button class="btn"><i class="bi bi-trash-fill" style="font-size: 25px;"></i></button>
+        </div>
+      </tr>
+      <tr>
+        <td> task </td>
+        <td> due-date </td>
+        <td> status </td>
+        <td> actions </td>
         <div class="line-1">
           <button class="btn"><i class="bi bi-eye" style="font-size: 25px;"></i></button>
           <button class="btn"><i class="bi bi-pencil-square" style="font-size: 25px;"></i></button>
@@ -42,4 +54,20 @@
       </tr>
     </tbody>
   </table>
+</div>
+
+
+<div class="main">
+
+  <input
+    #newItem
+    placeholder="add an item"
+    (keyup.enter)="addItem(newItem.value); newItem.value = ''"
+    class="lg-text-input"
+    id="addItemInput" />
+
+  <ul>
+    <li *ngFor="let item of items">{{item.description}}</li>
+  </ul>
+
 </div>

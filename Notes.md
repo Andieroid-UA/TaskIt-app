@@ -130,3 +130,5 @@ Going to use this to generate the data table
 
 <https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Angular_todo_list_beginning>
 
+OKAY! I got a working add task button. Now just need to re-route the submit to "add" to the list via the submit button when making a new task...
+
