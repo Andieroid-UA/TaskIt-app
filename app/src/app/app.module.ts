@@ -18,6 +18,7 @@ import { LoginComponent } from './overlay/overlay-splash-page/login/login.compon
 import { SignUpComponent } from './overlay/overlay-splash-page/sign-up/sign-up.component';
 import { SplashComponent } from './overlay/overlay-splash-page/splash/splash.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
     SplashComponent
   ],
   imports: [
-    BrowserModule, DragDropModule
+    BrowserModule, DragDropModule, AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

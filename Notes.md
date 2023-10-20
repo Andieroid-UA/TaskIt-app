@@ -105,3 +105,28 @@ Just going to stick to pure documentation... frankenstiening is becoming too muc
 
 <https://material.angular.io/cdk/drag-drop/api>
 
+### 10/19/23
+
+    npm install popper.js --save
+
+Hope this works to get the dropdown to work...
+
+Nope. Let's try this one
+
+    npm install jquery --save
+
+Nope!
+
+At least I've got a dropdown list for the buttons now.
+Going to skip this one for now and come back later...
+
+We're going to go with change pages with routing and assemble some URLS!
+
+![Alt text](image-3.png)
+
+I want to work on this part... to have the buttons load the different pages
+
+Going to use this to generate the data table
+
+<https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Angular_todo_list_beginning>
+
