@@ -155,3 +155,14 @@ Setting up routing:
 Note to self: Need to combine the sidebar with the pages itself to make this MUCH cleaner... Did so by importing the bar into the page. That way if something is funky can go to the source
 
 YES!! I've been scared with routing but finally got the wheels moving
+
+-----------------
+Update: at home tried to run. Got error:
+
+Cannot find module '@angular/cdk/drag-drop' or its corresponding type declarations.ts(2307)
+
+Trying this command to fix it: 
+    npm install --save @angular/material @angular/cdk
+
+Now it works!
+
