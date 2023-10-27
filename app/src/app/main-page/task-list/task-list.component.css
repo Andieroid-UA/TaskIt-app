@@ -24,3 +24,16 @@ ul.dt-button-collection{
   border-style: solid;
   border-radius: 10px;
  }
+
+ .container {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 10px;
+  background-color: #ffffff;
+}
+
+.main {
+  text-align: left;
+}

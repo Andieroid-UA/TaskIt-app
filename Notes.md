@@ -132,3 +132,26 @@ Going to use this to generate the data table
 
 OKAY! I got a working add task button. Now just need to re-route the submit to "add" to the list via the submit button when making a new task...
 
+## 10/26/23
+
+![Alt text](image-5.png)
+
+Updated my outline for the app
+
+<https://jamboard.google.com/d/1QW8bDa9fh_Ix0r4Ti95sI2UvzQLTzyJLdgg0V32oWnU/viewer?f=0>
+
+Setting up routing:
+
+1) Make a new file called "app-routing.module.ts"
+
+2) Add the components you want to hop between
+
+3) Add the router outlet to your app-component.html
+
+<router-outlet></router-outlet>
+
+*instead of header replace with sidebar*
+
+Note to self: Need to combine the sidebar with the pages itself to make this MUCH cleaner... Did so by importing the bar into the page. That way if something is funky can go to the source
+
+YES!! I've been scared with routing but finally got the wheels moving

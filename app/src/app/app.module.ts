@@ -40,7 +40,9 @@ import { AppRoutingModule } from './app-routing.module';
     SplashComponent
   ],
   imports: [
-    BrowserModule, DragDropModule, AppRoutingModule
+    BrowserModule,
+    DragDropModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
