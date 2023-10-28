@@ -168,3 +168,31 @@ Now it works!
 
 ## 10/27/23
 
+Cleaned up the bar on the left a bit. It's been a busy day.
+
+Sometimes I wish all I had to worry about was just getting this homework done...
+
+--------
+This looks a lot more helpful for the Kanban stuff
+
+https://www.youtube.com/watch?v=ecKw7FfikwI
+
+OOOH!! This one is SUPER Nice:
+
+https://github.com/lukeska/kanban-board
+
+This one has categories!
+
+https://www.youtube.com/watch?v=YU9XJEeLjk4
+
+*learned that hyphens DO NOT work with routing. Example below for sign-up:*
+
+ {path: "sign-up", component: SignUpComponent},
+
+YESS!! Got the pages connected. One step closer. Feel like I can actually do this
+
+*There's a pop up thing in Angular...*
+
+https://v6.material.angular.io/components/dialog/overview
+
+## 
