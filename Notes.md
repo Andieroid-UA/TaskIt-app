@@ -195,4 +195,8 @@ YESS!! Got the pages connected. One step closer. Feel like I can actually do thi
 
 https://v6.material.angular.io/components/dialog/overview
 
-## 
+## 10/29/23
+
+Modal Dialouge...Work with Nia 1 hour to find overlay thing
+
+READ Angular Docs pls....
