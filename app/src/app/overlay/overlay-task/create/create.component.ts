@@ -1,27 +1,11 @@
-import { Component, OnInit } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-create',
   templateUrl: './create.component.html',
   styleUrls: ['./create.component.css'],
-  animations: [
-    trigger('fadeInOut', [
-      state('in', style({ opacity: 1 })),
-      state('out', style({ opacity: 0 })),
-      transition('in => out', animate(700)),
-      transition('out => in', animate(1000))
-    ])
-  ]
+  animations: []
 })
-export class CreateComponent implements OnInit {
-  showPopup: boolean = true;
+export class CreateComponent {
 
-  closePopup() {
-    this.showPopup = false;
-  }
-
-  ngOnInit() {
-    // You can trigger the fadeIn animation here if needed
-  }
 }

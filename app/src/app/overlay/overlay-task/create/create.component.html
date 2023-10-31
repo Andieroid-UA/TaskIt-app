@@ -1,65 +1,60 @@
-<div id="overlay" class="cover blur-in">
-  <div class="content">
-<app-sidebar></app-sidebar>
-  </div>
-</div>
-
-<div class="row pop-up">
-  <div class="box">
-    <div class="child-container">
-
-      <div class="child1">
-        <h3>Add a New Task</h3>
-        <form>
-          <div class="form-group">
-            <input class="form-control" type="text" placeholder="Title">
-            <br>
-            <textarea class="form-control" aria-label="With textarea" placeholder="Description"></textarea><br>
-          </div>
-        </form>
-      </div>
-
-      <div class="child2">
-        <form>
-
-          <div class="form-group">
-            <input class="form-control" type="date" placeholder="Due Date">
-          </div>
-
-        <br>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Priority
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">Low</a></li>
-              <li><a class="dropdown-item" href="#">Med</a></li>
-              <li><a class="dropdown-item" href="#">High</a></li>
-            </ul>
-          </div>
-
-          <br>
-
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-              Status
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-              <li><a class="dropdown-item" href="#">New</a></li>
-              <li><a class="dropdown-item" href="#">In Progress</a></li>
-              <li><a class="dropdown-item" href="#">Completed</a></li>
-            </ul>
-          </div>
-        </form>
-      <br>
-
-        <div class="btn-together">
-          <button type="button" class="btn btn-warning">Cancel</button>
-          <button type="button" class="btn btn-success">Create</button>
+  <!-- Modal Container -->
+  <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Add a New Task</h3>
+          <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-
-      </div>
-
-    </div>
-  </div>
-</div>
+        <div class="modal-body">
+<!------------------------------Title Section--------------------------------------------->
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Title">
+                    <br>
+<!---------------------Description Area---------------------------------------------------->
+                    <textarea class="form-control" aria-label="With textarea" placeholder="Description"></textarea>
+                    <br>
+                  </div>
+                </form>
+<!----------------------------Due Date------------------------------------------>
+                <form>
+                  <div class="form-group">
+                    <input class="form-control" type="date" placeholder="Due Date">
+                  </div>
+                  <br>
+<!---------------------------Priority Button -------------------------------------------->
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="priorityDropdown" data-bs-toggle="dropdown" aria-expanded="false">Priority</button>
+                    <!-- <ul class="dropdown-menu" aria-labelledby="priorityDropdown">
+                      <li><a class="dropdown-item" href="#">Low</a></li>
+                      <li><a class="dropdown-item" href="#">Med</a></li>
+                      <li><a class="dropdown-item" href="#">High</a></li>
+                    </ul> -->
+                  </div>
+                  <br>
+<!-------------------Status Button------------------------------------------------>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="statusDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                      Status
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="statusDropdown">
+                      <li><a class="dropdown-item" href="#">New</a></li>
+                      <li><a class="dropdown-item" href="#">In Progress</a></li>
+                      <li><a class="dropdown-item" href="#">Completed</a></li>
+                    </ul>
+                  </div>
+                  <br>
+<!-------------------Cancel and Create Buttons----------------------------------------->
+                  <div class="btn-together">
+                    <button type="button" class="btn btn-warning" id="cancelButton">Cancel</button>
+                    <button type="button" class="btn btn-success" id="createButton">Create</button>
+                  </div>
+<!----------------------------------------------------------------------------------------->
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>

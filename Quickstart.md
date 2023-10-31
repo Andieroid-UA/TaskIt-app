@@ -30,7 +30,7 @@ Choose "CSS"
 
 node_modules/bootstrap/dist/css/bootstrap.min
 
-4. Test your webpage
+5. Test your webpage
 
     ng serve
 
@@ -44,3 +44,15 @@ node_modules/bootstrap/dist/css/bootstrap.min
 OR
 
     ng g c [name of your component]
+
+
+    # Quickstart for a New Angular Setup
+
+
+6. In order to follow along smoothly with the course examples, make sure you install RxJS v6 by running
+
+    npm install --save rxjs@6 
+
+In addition, also install the rxjs-compat package:
+
+    npm install --save rxjs-compat

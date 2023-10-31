@@ -6,6 +6,7 @@ import { KanbanComponent } from "./main-page/kanban/kanban.component";
 import { LoginComponent } from "./overlay/overlay-splash-page/login/login.component";
 import { SignUpComponent } from "./overlay/overlay-splash-page/sign-up/sign-up.component";
 import { SplashComponent } from "./overlay/overlay-splash-page/splash/splash.component";
+import { CreateComponent } from "./overlay/overlay-task/create/create.component";
 
 const appRoutes: Routes = [
   { path: "", redirectTo: "/splash", pathMatch: "full" },
@@ -13,7 +14,8 @@ const appRoutes: Routes = [
   { path: "kanban", component: KanbanComponent },
   { path: "login", component: LoginComponent },
   {path: "sign-up", component: SignUpComponent},
-  {path: "splash", component: SplashComponent}
+  {path: "splash", component: SplashComponent},
+  {path: "create", component: CreateComponent}
 ];
 
 @NgModule({

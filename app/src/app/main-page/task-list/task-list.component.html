@@ -9,9 +9,10 @@
         <button class="btn btn-secondary dropdown-toggle">Title</button>
         <button class="btn btn-secondary dropdown-toggle">Date</button>
         <button class="btn btn-secondary dropdown-toggle">Priority</button>
-        <button class="btn-primary" (click)="addItem(newItem.value)">Add New Task</button>
-      </div>
-    </div>
+<!-- Add Task Modal Button ---------------------------------------------->
+<button id="createModal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#createModal">Add a New Task</button>
+</div>
+    <!-- To Do List Table Area------------------------------------------------>
     <div class="table-body">
       <table class="table table-striped table-bordered" cellspacing="0" width="100%">
         <thead>
@@ -30,36 +31,18 @@
             <td>status</td>
             <td>actions</td>
             <div class="line-1">
-              <button class="btn"><i class="bi bi-eye" style="font-size: 25px;"></i></button>
-              <button class="btn"><i class="bi bi-pencil-square" style="font-size: 25px;"></i></button>
-              <button class="btn"><i class="bi bi-trash-fill" style="font-size: 25px;"></i></button>
-            </div>
-          </tr>
-          <tr>
-            <td>task</td>
-            <td>due-date</td>
-            <td>status</td>
-            <td>actions</td>
-            <div class="line-1">
-              <button class="btn"><i class="bi bi-eye" style="font-size: 25px;"></i></button>
-              <button class="btn"><i class="bi bi-pencil-square" style="font-size: 25px;"></i></button>
-              <button class="btn"><i class="bi bi-trash-fill" style="font-size: 25px;"></i></button>
+<!-------------------- Edit/Create/Delete Tasks -- Modal Buttons------------------------>
+              <button id="viewModal" class="btn" data-bs-toggle="modal" data-bs-target="#viewModal"><i class="bi bi-eye" style="font-size: 25px;"></i></button>
+
+              <button id="editModal" class="btn" data-bs-toggle="modal" data-bs-target="#editModal"><i class="bi bi-pencil-square" style="font-size: 25px;"></i></button>
+
+              <button id="deleteModal" class="btn" data-bs-toggle="modal" data-bs-target="#deleteModal"><i class="bi bi-trash-fill" style="font-size: 25px;"></i></button>
+
             </div>
           </tr>
         </tbody>
       </table>
-      <div class="main">
-        <input
-          #newItem
-          placeholder="add an item"
-          (keyup.enter)="addItem(newItem.value); newItem.value = ''"
-          class="lg-text-input"
-          id="addItemInput"
-        />
-        <ul>
-          <li *ngFor="let item of items">{{ item.description }}</li>
-        </ul>
-      </div>
+<!------------------------------------------------------------------------------------->
     </div>
   </div>
 </div>

@@ -200,3 +200,35 @@ https://v6.material.angular.io/components/dialog/overview
 Modal Dialouge...Work with Nia 1 hour to find overlay thing
 
 READ Angular Docs pls....
+
+## 10/30/23
+
+This will come in handy with making the forms submitable
+
+https://angular.io/guide/forms
+
+This MIGHT help with the Kanban thing
+
+https://github.com/adityakeyal/angular-kanban
+
+
+![Bug](image-6.png)
+
+I am not sure why, this "fixes" it, but not sure how to go about solving this issue.
+
+THE MODAL HAS TO BE IN APP COMPONENT
+
+"Modal is behind backdrop" <- prose for the internets
+
+*This is so we can create a new button to attach to a modal*
+
+<div class="modal fade" id="newModal" tabindex="-1" aria-labelledby="newModalLabel" aria-hidden="true">
+  <!-- Your modal content goes here -->
+</div>
+
+<button id="openModalButton" class="btn" data-bs-toggle="modal" data-bs-target="#newModal"><i class="bi bi-eye" style="font-size: 25px;"></i></button>
+
+So I need to edit the *"id"* and the *"aria-labelledby"* 
+
+For the task-list component area and for the individual modal areas I need to edit the *"data-bs-target"* areas.
+
